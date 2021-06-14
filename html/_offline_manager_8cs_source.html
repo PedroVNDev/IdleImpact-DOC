@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IdleImpact: Fichero Fuente D:/Unity/Proyectos/IdleProject/Assets/Scripts/OfflineManager.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Earth.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IdleImpact
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Clicker Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_215ba872d76dab12126bbfaeaa6b61fd.html">Unity</a></li><li class="navelem"><a class="el" href="dir_4dc258585e8a3be46effb20ffa0efd43.html">Proyectos</a></li><li class="navelem"><a class="el" href="dir_0354d2b78ec0787e421258cb6b840ba4.html">IdleProject</a></li><li class="navelem"><a class="el" href="dir_44cc158abfa91bb3183c6dce47e6db27.html">Assets</a></li><li class="navelem"><a class="el" href="dir_6de31145cbb2fd3e3a729e4a0bc01a8f.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OfflineManager.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_offline_manager_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_offline_manager.html">    7</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_offline_manager.html">OfflineManager</a> : MonoBehaviour</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">    9</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_idle_manager.html">IdleManager</a> <a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_offline_manager.html#a67cdc0f3d701ad48753a0efdd53e9385">   11</a></span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="class_offline_manager.html#a67cdc0f3d701ad48753a0efdd53e9385">offlinePopUp</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_offline_manager.html#abc9f14854443af809a6d0473c94b1fab">   13</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_offline_manager.html#abc9f14854443af809a6d0473c94b1fab">textoTiempoFuera</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_offline_manager.html#af5b2b11a5ca7b7e8003cc5748a2a66bc">   14</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_offline_manager.html#af5b2b11a5ca7b7e8003cc5748a2a66bc">textoGananciasTierra</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_offline_manager.html#acd6bbfc896600ea0c922b9038ca79a5b">   16</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_offline_manager.html#acd6bbfc896600ea0c922b9038ca79a5b">LoadProduccionOffline</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#a809dabc7ac0f9baf94d01075bde71f56">progresoOfflineActivado</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="comment">//Offline </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            var auxOfflineTiempo = Convert.ToInt64(PlayerPrefs.GetString(<span class="stringliteral">&quot;OfflineTime&quot;</span>));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            DateTime tiempoPasado = DateTime.FromBinary(auxOfflineTiempo);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            var tiempoActual = DateTime.Now;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            var diferencia = tiempoActual.Subtract(tiempoPasado);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            var tiempoBruto = (float) diferencia.TotalSeconds;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            var tiempoOffline = tiempoBruto / 10;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_offline_manager.html#a67cdc0f3d701ad48753a0efdd53e9385">offlinePopUp</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            TimeSpan timer = TimeSpan.FromSeconds(tiempoBruto);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#accf9cd007de592e90356c67059e1de35">idiomaSeleccionado</a> == 0) </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_offline_manager.html#abc9f14854443af809a6d0473c94b1fab">textoTiempoFuera</a>.text = $<span class="stringliteral">&quot;Estuviste fuera por:\n&lt;color=#00FF00&gt;{timer:dd\\:hh\\:mm\\:ss}&lt;/color&gt;&quot;</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#accf9cd007de592e90356c67059e1de35">idiomaSeleccionado</a> == 1)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="class_offline_manager.html#abc9f14854443af809a6d0473c94b1fab">textoTiempoFuera</a>.text = $<span class="stringliteral">&quot;You were away for:\n&lt;color=#00FF00&gt;{timer:dd\\:hh\\:mm\\:ss}&lt;/color&gt;&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> gananciasTerrans = <a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a0b44cbcef07c877d8a9811ff9e4e8f19">ValorTotalTerransPorSegundo</a>() * tiempoOffline;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#aa841418458e414945af298b419eb32eb">terrans</a> += gananciasTerrans;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#afb56529681f48794694fa24f7fc8b723">terransTotales</a> += gananciasTerrans;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#accf9cd007de592e90356c67059e1de35">idiomaSeleccionado</a> == 0) </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_offline_manager.html#af5b2b11a5ca7b7e8003cc5748a2a66bc">textoGananciasTierra</a>.text = $<span class="stringliteral">&quot;&lt;color=#00aeff&gt;Ganancias:\n + {Metodos.MetodoNotacion(gananciasTerrans, &quot;</span>F2<span class="stringliteral">&quot;)} Terrans&lt;/color&gt;&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#accf9cd007de592e90356c67059e1de35">idiomaSeleccionado</a> == 1)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="class_offline_manager.html#af5b2b11a5ca7b7e8003cc5748a2a66bc">textoGananciasTierra</a>.text = $<span class="stringliteral">&quot;&lt;color=#00aeff&gt;Gains:\n + {Metodos.MetodoNotacion(gananciasTerrans, &quot;</span>F2<span class="stringliteral">&quot;)} Terrans&lt;/color&gt;&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_offline_manager.html#abbd99a577cd0f5ea738bf616778b756e">   47</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_offline_manager.html#abbd99a577cd0f5ea738bf616778b756e">CerrarOfflinePopUp</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_offline_manager.html#a67cdc0f3d701ad48753a0efdd53e9385">offlinePopUp</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="ttc" id="aclass_idle_manager_html"><div class="ttname"><a href="class_idle_manager.html">IdleManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00008">IdleManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a0b44cbcef07c877d8a9811ff9e4e8f19"><div class="ttname"><a href="class_idle_manager.html#a0b44cbcef07c877d8a9811ff9e4e8f19">IdleManager.ValorTotalTerransPorSegundo</a></div><div class="ttdeci">BigDouble ValorTotalTerransPorSegundo()</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00146">IdleManager.cs:146</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a58de809df296a9deae4723214364a79a"><div class="ttname"><a href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">IdleManager.data</a></div><div class="ttdeci">PlayerData data</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00010">IdleManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html"><div class="ttname"><a href="class_offline_manager.html">OfflineManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00007">OfflineManager.cs:8</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_a67cdc0f3d701ad48753a0efdd53e9385"><div class="ttname"><a href="class_offline_manager.html#a67cdc0f3d701ad48753a0efdd53e9385">OfflineManager.offlinePopUp</a></div><div class="ttdeci">GameObject offlinePopUp</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00011">OfflineManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_a9a494930c0d031d81f8dd6efc3a18b4c"><div class="ttname"><a href="class_offline_manager.html#a9a494930c0d031d81f8dd6efc3a18b4c">OfflineManager.juego</a></div><div class="ttdeci">IdleManager juego</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00009">OfflineManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_abbd99a577cd0f5ea738bf616778b756e"><div class="ttname"><a href="class_offline_manager.html#abbd99a577cd0f5ea738bf616778b756e">OfflineManager.CerrarOfflinePopUp</a></div><div class="ttdeci">void CerrarOfflinePopUp()</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00047">OfflineManager.cs:47</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_abc9f14854443af809a6d0473c94b1fab"><div class="ttname"><a href="class_offline_manager.html#abc9f14854443af809a6d0473c94b1fab">OfflineManager.textoTiempoFuera</a></div><div class="ttdeci">Text textoTiempoFuera</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00013">OfflineManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_acd6bbfc896600ea0c922b9038ca79a5b"><div class="ttname"><a href="class_offline_manager.html#acd6bbfc896600ea0c922b9038ca79a5b">OfflineManager.LoadProduccionOffline</a></div><div class="ttdeci">void LoadProduccionOffline()</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00016">OfflineManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_offline_manager_html_af5b2b11a5ca7b7e8003cc5748a2a66bc"><div class="ttname"><a href="class_offline_manager.html#af5b2b11a5ca7b7e8003cc5748a2a66bc">OfflineManager.textoGananciasTierra</a></div><div class="ttdeci">Text textoGananciasTierra</div><div class="ttdef"><b>Definition:</b> <a href="_offline_manager_8cs_source.html#l00014">OfflineManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_player_data_html_a809dabc7ac0f9baf94d01075bde71f56"><div class="ttname"><a href="class_player_data.html#a809dabc7ac0f9baf94d01075bde71f56">PlayerData.progresoOfflineActivado</a></div><div class="ttdeci">bool progresoOfflineActivado</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00010">PlayerData.cs:10</a></div></div>
+<div class="ttc" id="aclass_player_data_html_aa841418458e414945af298b419eb32eb"><div class="ttname"><a href="class_player_data.html#aa841418458e414945af298b419eb32eb">PlayerData.terrans</a></div><div class="ttdeci">BigDouble terrans</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00017">PlayerData.cs:17</a></div></div>
+<div class="ttc" id="aclass_player_data_html_accf9cd007de592e90356c67059e1de35"><div class="ttname"><a href="class_player_data.html#accf9cd007de592e90356c67059e1de35">PlayerData.idiomaSeleccionado</a></div><div class="ttdeci">short idiomaSeleccionado</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00117">PlayerData.cs:117</a></div></div>
+<div class="ttc" id="aclass_player_data_html_afb56529681f48794694fa24f7fc8b723"><div class="ttname"><a href="class_player_data.html#afb56529681f48794694fa24f7fc8b723">PlayerData.terransTotales</a></div><div class="ttdeci">BigDouble terransTotales</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00018">PlayerData.cs:18</a></div></div>
+<div class="ttc" id="anamespace_break_infinity_html"><div class="ttname"><a href="namespace_break_infinity.html">BreakInfinity</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00013">BigDouble.cs:14</a></div></div>
+<div class="ttc" id="astruct_break_infinity_1_1_big_double_html"><div class="ttname"><a href="struct_break_infinity_1_1_big_double.html">BreakInfinity.BigDouble</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00018">BigDouble.cs:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

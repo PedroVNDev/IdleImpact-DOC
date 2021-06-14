@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IdleImpact: Fichero Fuente D:/Unity/Proyectos/IdleProject/Assets/Scripts/UpgradeManager.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Earth.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IdleImpact
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Clicker Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_215ba872d76dab12126bbfaeaa6b61fd.html">Unity</a></li><li class="navelem"><a class="el" href="dir_4dc258585e8a3be46effb20ffa0efd43.html">Proyectos</a></li><li class="navelem"><a class="el" href="dir_0354d2b78ec0787e421258cb6b840ba4.html">IdleProject</a></li><li class="navelem"><a class="el" href="dir_44cc158abfa91bb3183c6dce47e6db27.html">Assets</a></li><li class="navelem"><a class="el" href="dir_6de31145cbb2fd3e3a729e4a0bc01a8f.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">UpgradeManager.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_upgrade_manager_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <span class="keyword">static</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>.<a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html">    8</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_upgrade_manager.html">UpgradeManager</a> : MonoBehaviour</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">   10</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_idle_manager.html">IdleManager</a> <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a6ce7a26535981cfbf8c1c1903044963e">   12</a></span>&#160;    <span class="keyword">public</span> GameObject[] <a class="code" href="class_upgrade_manager.html#a6ce7a26535981cfbf8c1c1903044963e">clickMejora</a> = <span class="keyword">new</span> GameObject[2];</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#adc5174680e32984c89d82460967205b9">   13</a></span>&#160;    <span class="keyword">public</span> GameObject[] <a class="code" href="class_upgrade_manager.html#adc5174680e32984c89d82460967205b9">produccionMejora</a> = <span class="keyword">new</span> GameObject[2];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//Textos</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ad6ac8fde460919dc069b777b12301a10">   16</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_upgrade_manager.html#ad6ac8fde460919dc069b777b12301a10">textoMejoraClick</a> = <span class="keyword">new</span> Text[2];</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ab88e6a7cc1480a6ca213a7f7903cc59a">   17</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_upgrade_manager.html#ab88e6a7cc1480a6ca213a7f7903cc59a">textoMejoraClickMax</a> = <span class="keyword">new</span> Text[2];</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a53677b4e618f79522970d6d0461628e8">   18</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_upgrade_manager.html#a53677b4e618f79522970d6d0461628e8">textoMejoraProduccion</a> = <span class="keyword">new</span> Text[2];</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#adbd7782e7b5d9e2dd1a18cba39e741e7">   19</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_upgrade_manager.html#adbd7782e7b5d9e2dd1a18cba39e741e7">textoMejoraProduccionMax</a> = <span class="keyword">new</span> Text[2];</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//Barras de progreso</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a780d08df9691f67be6222ebd60cc548a">   22</a></span>&#160;    <span class="keyword">public</span> Image <a class="code" href="class_upgrade_manager.html#a780d08df9691f67be6222ebd60cc548a">mejoraBarraClick1</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a67714d41836d0ebfbf404aa95bbc0d17">   23</a></span>&#160;    <span class="keyword">public</span> Image <a class="code" href="class_upgrade_manager.html#a67714d41836d0ebfbf404aa95bbc0d17">mejoraBarraClick1Suave</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">   25</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">   26</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">clickMejoraPoder</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">   27</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a9c2d96e46537941553d684057c90f9e7">   28</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#a9c2d96e46537941553d684057c90f9e7">clickMejoraDesbloqueoCoste</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">   29</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">   31</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a299e26266865d3e4fd95744a0a10db6e">   32</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#a299e26266865d3e4fd95744a0a10db6e">produccionMejoraPoder</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">   33</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a203700fa0c98628f6cd828174759d27c">   34</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_upgrade_manager.html#a203700fa0c98628f6cd828174759d27c">produccionMejoraDesbloqueoCoste</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">   37</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span>[] <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">   38</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span>[] <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a46964307daddb87555a856e61e863a1f">   41</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a46964307daddb87555a856e61e863a1f">Start</a>()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[2];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">clickMejoraPoder</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {1, 5};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {10, 100};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[] {1.07, 1.07};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_upgrade_manager.html#a9c2d96e46537941553d684057c90f9e7">clickMejoraDesbloqueoCoste</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {5, 50};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[2];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_upgrade_manager.html#a299e26266865d3e4fd95744a0a10db6e">produccionMejoraPoder</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {1, 5};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {25, 250};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[] {1.07, 1.07};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_upgrade_manager.html#a203700fa0c98628f6cd828174759d27c">produccionMejoraDesbloqueoCoste</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] {15, 125};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[2];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[2];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#aefbc289b7da98c53a9122e865ef07bd1">   59</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#aefbc289b7da98c53a9122e865ef07bd1">EmpezarMejoras</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="class_upgrade_manager.html#a030bf1197c13c528bde6cba4a45de248">ArrayManager</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a>[0] = <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a>[0] * Pow(<a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a>[0], data.clickMejora1Nivel);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a>[1] = <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a>[1] * Pow(<a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a>[1], data.clickMejora2Nivel);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a>[0] = <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a>[0] *</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                   Pow(<a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a>[0], data.produccionMejora1Nivel);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a>[1] = <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a>[1] *</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                   Pow(<a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a>[0], data.produccionMejora2Nivel);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a9720d58dae0f6286fa9b6c060c0719df">   73</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a9720d58dae0f6286fa9b6c060c0719df">EmpezarMejorasUI</a>()</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">for</span> (var i = 0; i &lt; 2; i++)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="class_upgrade_manager.html#ad6ac8fde460919dc069b777b12301a10">textoMejoraClick</a>[i].text =</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                $<span class="stringliteral">&quot;Mejora Click {i + 1}\nCoste: {ObtenerMejoraCoste(i, clickMejoraCoste)} Terrans\nPoder: + {clickMejoraPoder[i]} Click\n Nivel: {ObtenerMejoraNivel(i, clickMejoraNiveles)}&quot;</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="class_upgrade_manager.html#ab88e6a7cc1480a6ca213a7f7903cc59a">textoMejoraClickMax</a>[i].text = $<span class="stringliteral">&quot;Compra Max ({CompraClickMaxContador(i)})&quot;</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="class_upgrade_manager.html#a53677b4e618f79522970d6d0461628e8">textoMejoraProduccion</a>[i].text =</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                $<span class="stringliteral">&quot;Mejora Produccion {i + 1}\nCoste: {ObtenerMejoraCoste(i, produccionMejoraCoste)} Terrans\nPoder: + {Metodos.MetodoNotacion(juego.MejoraTotal() * Pow(1.1, juego.prestigio.niveles[1]), &quot;</span>F2<span class="stringliteral">&quot;)}\n Nivel: {ObtenerMejoraNivel(i, produccionMejoraNiveles)}&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="class_upgrade_manager.html#adbd7782e7b5d9e2dd1a18cba39e741e7">textoMejoraProduccionMax</a>[i].text = $<span class="stringliteral">&quot;Compra Max ({CompraProduccionMaxContador(i)})&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_upgrade_manager.html#a6ce7a26535981cfbf8c1c1903044963e">clickMejora</a>[i].gameObject.SetActive(data.terransTotales &gt;= <a class="code" href="class_upgrade_manager.html#a9c2d96e46537941553d684057c90f9e7">clickMejoraDesbloqueoCoste</a>[i]);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_upgrade_manager.html#adc5174680e32984c89d82460967205b9">produccionMejora</a>[i].gameObject.SetActive(data.terransTotales &gt;= <a class="code" href="class_upgrade_manager.html#a203700fa0c98628f6cd828174759d27c">produccionMejoraDesbloqueoCoste</a>[i]);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">string</span> ObtenerMejoraCoste(<span class="keywordtype">int</span> index, <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] mejora)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_metodos.html">Metodos</a>.<a class="code" href="class_metodos.html#ab0116174fb822656302bd6f03c51dfce">MetodoNotacion</a>(mejora[index], <span class="stringliteral">&quot;F2&quot;</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">string</span> ObtenerMejoraNivel(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span>[] mejoraNivel)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_metodos.html">Metodos</a>.<a class="code" href="class_metodos.html#ab0116174fb822656302bd6f03c51dfce">MetodoNotacion</a>(mejoraNivel[index], <span class="stringliteral">&quot;F2&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#ac247a4c09a19be9e72e9ea856561c987">  104</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#ac247a4c09a19be9e72e9ea856561c987">CompraClickMejora</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (data.terrans &gt;= <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a>[index])</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[index]++;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            data.terrans -= <a class="code" href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">clickMejoraCoste</a>[index];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            data.terransClickValor += <a class="code" href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">clickMejoraPoder</a>[index];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">NoArrayManager</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a5a40f8b89efd1e94ba0db7518a032771">  118</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a5a40f8b89efd1e94ba0db7518a032771">CompraProduccionMejora</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (data.terrans &gt;= <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a>[index])</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[index]++;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            data.terrans -= <a class="code" href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">produccionMejoraCoste</a>[index];</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">NoArrayManager</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//Mejoras</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a1cfd790472f0eaa2157bcad5d1255047">  132</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a1cfd790472f0eaa2157bcad5d1255047">CompraClickMax</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        var b = <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a>[index];</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        var c = data.terrans;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        var r = <a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a>[index];</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        var k = <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[index];</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        var n = Floor(Log(c * (r - 1) / (b * Pow(r, k)) + 1, r));</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        var coste = b * (Pow(r, k) * (Pow(r, n) - 1) / (r - 1));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (data.terrans &gt;= coste)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[index] += (int) n;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            data.terrans -= coste;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            data.terransClickValor += n * <a class="code" href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">clickMejoraPoder</a>[index];</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">NoArrayManager</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#aa7168ae7026a191eef4f25406c6dbe2c">  154</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> <a class="code" href="class_upgrade_manager.html#aa7168ae7026a191eef4f25406c6dbe2c">CompraClickMaxContador</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        var b = <a class="code" href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">clickMejoraCosteBase</a>[index];</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        var c = data.terrans;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        var r = <a class="code" href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">clickMejoraCosteMultiplicadores</a>[index];</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        var k = <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[index];</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        var n = Floor(Log(c * (r - 1) / (b * Pow(r, k)) + 1, r));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a5257cece57e5be1b9acf5c1240fff6d0">  167</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a5257cece57e5be1b9acf5c1240fff6d0">CompraProduccionMax</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        var b = <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a>[index];</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        var c = data.terrans;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        var r = <a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a>[index];</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        var k = <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[index];</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        var n = Floor(Log(c * (r - 1) / (b * Pow(r, k)) + 1, r));</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        var coste = b * (Pow(r, k) * (Pow(r, n) - 1) / (r - 1));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (data.terrans &gt;= coste)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[index] += (int) n;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            data.terrans -= coste;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">NoArrayManager</a>();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a78f3d45ef20f23106cc1a644d526ad79">  188</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> <a class="code" href="class_upgrade_manager.html#a78f3d45ef20f23106cc1a644d526ad79">CompraProduccionMaxContador</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        var b = <a class="code" href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">produccionMejoraCosteBase</a>[index];</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        var c = data.terrans;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        var r = <a class="code" href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">produccionMejoraCosteMultiplicadores</a>[index];</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        var k = <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[index];</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        var n = Floor(Log(c * (r - 1) / (b * Pow(r, k)) + 1, r));</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a030bf1197c13c528bde6cba4a45de248">  201</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a030bf1197c13c528bde6cba4a45de248">ArrayManager</a>()</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[0] = data.clickMejora1Nivel;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[1] = data.clickMejora2Nivel;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[0] = data.produccionMejora1Nivel;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[1] = data.produccionMejora2Nivel;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">  211</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">NoArrayManager</a>()</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        var data = <a class="code" href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        data.<a class="code" href="class_player_data.html#acc3932880f9fa2908552891387652d87">clickMejora1Nivel</a> = <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[0];</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        data.clickMejora2Nivel = <a class="code" href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">clickMejoraNiveles</a>[1];</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        data.produccionMejora1Nivel = <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[0];</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        data.produccionMejora2Nivel = <a class="code" href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">produccionMejoraNiveles</a>[1];</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="ttc" id="aclass_idle_manager_html"><div class="ttname"><a href="class_idle_manager.html">IdleManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00008">IdleManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a58de809df296a9deae4723214364a79a"><div class="ttname"><a href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">IdleManager.data</a></div><div class="ttdeci">PlayerData data</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00010">IdleManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_metodos_html"><div class="ttname"><a href="class_metodos.html">Metodos</a></div><div class="ttdef"><b>Definition:</b> <a href="_metodos_8cs_source.html#l00009">Metodos.cs:10</a></div></div>
+<div class="ttc" id="aclass_metodos_html_ab0116174fb822656302bd6f03c51dfce"><div class="ttname"><a href="class_metodos.html#ab0116174fb822656302bd6f03c51dfce">Metodos.MetodoNotacion</a></div><div class="ttdeci">static string MetodoNotacion(BigDouble x, string y)</div><div class="ttdef"><b>Definition:</b> <a href="_metodos_8cs_source.html#l00059">Metodos.cs:59</a></div></div>
+<div class="ttc" id="aclass_player_data_html_acc3932880f9fa2908552891387652d87"><div class="ttname"><a href="class_player_data.html#acc3932880f9fa2908552891387652d87">PlayerData.clickMejora1Nivel</a></div><div class="ttdeci">int clickMejora1Nivel</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00026">PlayerData.cs:26</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html"><div class="ttname"><a href="class_upgrade_manager.html">UpgradeManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00008">UpgradeManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a030bf1197c13c528bde6cba4a45de248"><div class="ttname"><a href="class_upgrade_manager.html#a030bf1197c13c528bde6cba4a45de248">UpgradeManager.ArrayManager</a></div><div class="ttdeci">void ArrayManager()</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00201">UpgradeManager.cs:201</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a0f8842ec9f38110cb48dedb608adf344"><div class="ttname"><a href="class_upgrade_manager.html#a0f8842ec9f38110cb48dedb608adf344">UpgradeManager.produccionMejoraCosteMultiplicadores</a></div><div class="ttdeci">double[] produccionMejoraCosteMultiplicadores</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00035">UpgradeManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a1cfd790472f0eaa2157bcad5d1255047"><div class="ttname"><a href="class_upgrade_manager.html#a1cfd790472f0eaa2157bcad5d1255047">UpgradeManager.CompraClickMax</a></div><div class="ttdeci">void CompraClickMax(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00132">UpgradeManager.cs:132</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a1d931074e6900cd225413985b8bb3c2f"><div class="ttname"><a href="class_upgrade_manager.html#a1d931074e6900cd225413985b8bb3c2f">UpgradeManager.clickMejoraCoste</a></div><div class="ttdeci">BigDouble[] clickMejoraCoste</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00025">UpgradeManager.cs:25</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a203700fa0c98628f6cd828174759d27c"><div class="ttname"><a href="class_upgrade_manager.html#a203700fa0c98628f6cd828174759d27c">UpgradeManager.produccionMejoraDesbloqueoCoste</a></div><div class="ttdeci">BigDouble[] produccionMejoraDesbloqueoCoste</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00034">UpgradeManager.cs:34</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a299e26266865d3e4fd95744a0a10db6e"><div class="ttname"><a href="class_upgrade_manager.html#a299e26266865d3e4fd95744a0a10db6e">UpgradeManager.produccionMejoraPoder</a></div><div class="ttdeci">BigDouble[] produccionMejoraPoder</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00032">UpgradeManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a3a41ccbceaff0d416d21cf363c451137"><div class="ttname"><a href="class_upgrade_manager.html#a3a41ccbceaff0d416d21cf363c451137">UpgradeManager.produccionMejoraCosteBase</a></div><div class="ttdeci">BigDouble[] produccionMejoraCosteBase</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00033">UpgradeManager.cs:33</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a46964307daddb87555a856e61e863a1f"><div class="ttname"><a href="class_upgrade_manager.html#a46964307daddb87555a856e61e863a1f">UpgradeManager.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00041">UpgradeManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a488c1cd558971b9f37a56114d75a2587"><div class="ttname"><a href="class_upgrade_manager.html#a488c1cd558971b9f37a56114d75a2587">UpgradeManager.juego</a></div><div class="ttdeci">IdleManager juego</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00010">UpgradeManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a5257cece57e5be1b9acf5c1240fff6d0"><div class="ttname"><a href="class_upgrade_manager.html#a5257cece57e5be1b9acf5c1240fff6d0">UpgradeManager.CompraProduccionMax</a></div><div class="ttdeci">void CompraProduccionMax(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00167">UpgradeManager.cs:167</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a53677b4e618f79522970d6d0461628e8"><div class="ttname"><a href="class_upgrade_manager.html#a53677b4e618f79522970d6d0461628e8">UpgradeManager.textoMejoraProduccion</a></div><div class="ttdeci">Text[] textoMejoraProduccion</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00018">UpgradeManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a5a40f8b89efd1e94ba0db7518a032771"><div class="ttname"><a href="class_upgrade_manager.html#a5a40f8b89efd1e94ba0db7518a032771">UpgradeManager.CompraProduccionMejora</a></div><div class="ttdeci">void CompraProduccionMejora(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00118">UpgradeManager.cs:118</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a67714d41836d0ebfbf404aa95bbc0d17"><div class="ttname"><a href="class_upgrade_manager.html#a67714d41836d0ebfbf404aa95bbc0d17">UpgradeManager.mejoraBarraClick1Suave</a></div><div class="ttdeci">Image mejoraBarraClick1Suave</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00023">UpgradeManager.cs:23</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a6ce7a26535981cfbf8c1c1903044963e"><div class="ttname"><a href="class_upgrade_manager.html#a6ce7a26535981cfbf8c1c1903044963e">UpgradeManager.clickMejora</a></div><div class="ttdeci">GameObject[] clickMejora</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00012">UpgradeManager.cs:12</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a780d08df9691f67be6222ebd60cc548a"><div class="ttname"><a href="class_upgrade_manager.html#a780d08df9691f67be6222ebd60cc548a">UpgradeManager.mejoraBarraClick1</a></div><div class="ttdeci">Image mejoraBarraClick1</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00022">UpgradeManager.cs:22</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a78f3d45ef20f23106cc1a644d526ad79"><div class="ttname"><a href="class_upgrade_manager.html#a78f3d45ef20f23106cc1a644d526ad79">UpgradeManager.CompraProduccionMaxContador</a></div><div class="ttdeci">BigDouble CompraProduccionMaxContador(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00188">UpgradeManager.cs:188</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a8fce4174c4e86d9782d9fab2bcada3a6"><div class="ttname"><a href="class_upgrade_manager.html#a8fce4174c4e86d9782d9fab2bcada3a6">UpgradeManager.NoArrayManager</a></div><div class="ttdeci">void NoArrayManager()</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00211">UpgradeManager.cs:211</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a9720d58dae0f6286fa9b6c060c0719df"><div class="ttname"><a href="class_upgrade_manager.html#a9720d58dae0f6286fa9b6c060c0719df">UpgradeManager.EmpezarMejorasUI</a></div><div class="ttdeci">void EmpezarMejorasUI()</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00073">UpgradeManager.cs:73</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_a9c2d96e46537941553d684057c90f9e7"><div class="ttname"><a href="class_upgrade_manager.html#a9c2d96e46537941553d684057c90f9e7">UpgradeManager.clickMejoraDesbloqueoCoste</a></div><div class="ttdeci">BigDouble[] clickMejoraDesbloqueoCoste</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00028">UpgradeManager.cs:28</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_aa7168ae7026a191eef4f25406c6dbe2c"><div class="ttname"><a href="class_upgrade_manager.html#aa7168ae7026a191eef4f25406c6dbe2c">UpgradeManager.CompraClickMaxContador</a></div><div class="ttdeci">BigDouble CompraClickMaxContador(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00154">UpgradeManager.cs:154</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_aa73c7cfd3cdd7b4682821e974ed61916"><div class="ttname"><a href="class_upgrade_manager.html#aa73c7cfd3cdd7b4682821e974ed61916">UpgradeManager.clickMejoraCosteBase</a></div><div class="ttdeci">BigDouble[] clickMejoraCosteBase</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00027">UpgradeManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_aa7d7aa4e21623419cf1d7ff1249d518a"><div class="ttname"><a href="class_upgrade_manager.html#aa7d7aa4e21623419cf1d7ff1249d518a">UpgradeManager.clickMejoraNiveles</a></div><div class="ttdeci">int[] clickMejoraNiveles</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00037">UpgradeManager.cs:37</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ab88e6a7cc1480a6ca213a7f7903cc59a"><div class="ttname"><a href="class_upgrade_manager.html#ab88e6a7cc1480a6ca213a7f7903cc59a">UpgradeManager.textoMejoraClickMax</a></div><div class="ttdeci">Text[] textoMejoraClickMax</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00017">UpgradeManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c"><div class="ttname"><a href="class_upgrade_manager.html#ac0cb2c4fc7f4ad0bdef9ef1a8e901e2c">UpgradeManager.produccionMejoraNiveles</a></div><div class="ttdeci">int[] produccionMejoraNiveles</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00038">UpgradeManager.cs:38</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ac247a4c09a19be9e72e9ea856561c987"><div class="ttname"><a href="class_upgrade_manager.html#ac247a4c09a19be9e72e9ea856561c987">UpgradeManager.CompraClickMejora</a></div><div class="ttdeci">void CompraClickMejora(int index)</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00104">UpgradeManager.cs:104</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ac381424b0b50740f8b374c8fd3223c43"><div class="ttname"><a href="class_upgrade_manager.html#ac381424b0b50740f8b374c8fd3223c43">UpgradeManager.produccionMejoraCoste</a></div><div class="ttdeci">BigDouble[] produccionMejoraCoste</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00031">UpgradeManager.cs:31</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ad2e0341e86c059d6a18879d6e519e79e"><div class="ttname"><a href="class_upgrade_manager.html#ad2e0341e86c059d6a18879d6e519e79e">UpgradeManager.clickMejoraCosteMultiplicadores</a></div><div class="ttdeci">double[] clickMejoraCosteMultiplicadores</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00029">UpgradeManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ad6ac8fde460919dc069b777b12301a10"><div class="ttname"><a href="class_upgrade_manager.html#ad6ac8fde460919dc069b777b12301a10">UpgradeManager.textoMejoraClick</a></div><div class="ttdeci">Text[] textoMejoraClick</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00016">UpgradeManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_ad9f8faab0151fea809aff1cbcf2ca3f5"><div class="ttname"><a href="class_upgrade_manager.html#ad9f8faab0151fea809aff1cbcf2ca3f5">UpgradeManager.clickMejoraPoder</a></div><div class="ttdeci">BigDouble[] clickMejoraPoder</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00026">UpgradeManager.cs:26</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_adbd7782e7b5d9e2dd1a18cba39e741e7"><div class="ttname"><a href="class_upgrade_manager.html#adbd7782e7b5d9e2dd1a18cba39e741e7">UpgradeManager.textoMejoraProduccionMax</a></div><div class="ttdeci">Text[] textoMejoraProduccionMax</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00019">UpgradeManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_adc5174680e32984c89d82460967205b9"><div class="ttname"><a href="class_upgrade_manager.html#adc5174680e32984c89d82460967205b9">UpgradeManager.produccionMejora</a></div><div class="ttdeci">GameObject[] produccionMejora</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00013">UpgradeManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_upgrade_manager_html_aefbc289b7da98c53a9122e865ef07bd1"><div class="ttname"><a href="class_upgrade_manager.html#aefbc289b7da98c53a9122e865ef07bd1">UpgradeManager.EmpezarMejoras</a></div><div class="ttdeci">void EmpezarMejoras()</div><div class="ttdef"><b>Definition:</b> <a href="_upgrade_manager_8cs_source.html#l00059">UpgradeManager.cs:59</a></div></div>
+<div class="ttc" id="anamespace_break_infinity_html"><div class="ttname"><a href="namespace_break_infinity.html">BreakInfinity</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00013">BigDouble.cs:14</a></div></div>
+<div class="ttc" id="astruct_break_infinity_1_1_big_double_html"><div class="ttname"><a href="struct_break_infinity_1_1_big_double.html">BreakInfinity.BigDouble</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00018">BigDouble.cs:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

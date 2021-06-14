@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IdleImpact: Fichero Fuente D:/Unity/Proyectos/IdleProject/Assets/Scripts/SuperNovaManager.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Earth.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IdleImpact
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Clicker Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_215ba872d76dab12126bbfaeaa6b61fd.html">Unity</a></li><li class="navelem"><a class="el" href="dir_4dc258585e8a3be46effb20ffa0efd43.html">Proyectos</a></li><li class="navelem"><a class="el" href="dir_0354d2b78ec0787e421258cb6b840ba4.html">IdleProject</a></li><li class="navelem"><a class="el" href="dir_44cc158abfa91bb3183c6dce47e6db27.html">Assets</a></li><li class="navelem"><a class="el" href="dir_6de31145cbb2fd3e3a729e4a0bc01a8f.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SuperNovaManager.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_super_nova_manager_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> <span class="keyword">static</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>.<a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_super_nova_manager.html">SuperNovaManager</a> : MonoBehaviour</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">   11</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_idle_manager.html">IdleManager</a> <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#ad0debd0027985e733a061297230048f8">   13</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_super_nova_manager.html#ad0debd0027985e733a061297230048f8">textoAstros</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#a88e9cdde035dfe4f3e75a40b55ca3871">   14</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_super_nova_manager.html#a88e9cdde035dfe4f3e75a40b55ca3871">textoAstrosMejora</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#a02ceef99fec7de68163183c590c07fa6">   15</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_super_nova_manager.html#a02ceef99fec7de68163183c590c07fa6">textoAstrosObtener</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#ad35b854c99b2c8768ce3a2a9149560e4">   17</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> <a class="code" href="class_super_nova_manager.html#ad35b854c99b2c8768ce3a2a9149560e4">astrosObtener</a> =&gt; 150 * Sqrt(<a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#a1f3b04a178d30fff809a907b225b8f6a">bitcoins</a> / 1e4);</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#ac7c305228852fad6095f832a95ced4f2">   18</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> <a class="code" href="class_super_nova_manager.html#ac7c305228852fad6095f832a95ced4f2">astrosMejora</a> =&gt; <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab9461916781b48a8c2fe3bedf2b5f513">astros</a> * 0.001 + 1;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#a1884245b6bc0ab1d5ea50cd311a7d7cb">   20</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_super_nova_manager.html#a1884245b6bc0ab1d5ea50cd311a7d7cb">Run</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        UI();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> UI()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            var data = <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#ad488140b01a352ee852747bbfd8140da">ventanaSuperNovaGrupo</a>.gameObject.activeSelf) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="class_super_nova_manager.html#ad0debd0027985e733a061297230048f8">textoAstros</a>.text = $<span class="stringliteral">&quot;Astros: {Metodos.MetodoNotacion(data.astros, &quot;</span>F2<span class="stringliteral">&quot;)}&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="class_super_nova_manager.html#a02ceef99fec7de68163183c590c07fa6">textoAstrosObtener</a>.text = $<span class="stringliteral">&quot;+{Metodos.MetodoNotacion(astrosObtener, &quot;</span>F2<span class="stringliteral">&quot;)} Astros&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <a class="code" href="class_super_nova_manager.html#a88e9cdde035dfe4f3e75a40b55ca3871">textoAstrosMejora</a>.text =</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    $<span class="stringliteral">&quot;Los Bitcoins son {Metodos.MetodoNotacion(astrosMejora, &quot;</span>F2<span class="stringliteral">&quot;)} x Mas fuertes&quot;</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_super_nova_manager.html#af22ec9957f3f65de595875de4415f382">   37</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_super_nova_manager.html#af22ec9957f3f65de595875de4415f382">SuperNova</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        var data = <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (data.bitcoins &gt; 1000)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            data.<a class="code" href="class_player_data.html#ab9461916781b48a8c2fe3bedf2b5f513">astros</a> += <a class="code" href="class_super_nova_manager.html#ad35b854c99b2c8768ce3a2a9149560e4">astrosObtener</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            data.terrans = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            data.terransClickValor = 1;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            data.clickMejora1Nivel = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            data.clickMejora1Coste = 10;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            data.clickMejora2Nivel = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            data.clickMejora2Coste = 100;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            data.produccionMejora1Nivel = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            data.produccionMejora1Coste = 25;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            data.produccionMejora2Nivel = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            data.produccionMejora2Coste = 250;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            data.produccionMejora2Poder = 5;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            data.bitcoins = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            data.prestigioMNivel1 = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            data.prestigioMNivel2 = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            data.prestigioMNivel3 = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#ad488140b01a352ee852747bbfd8140da">ventanaSuperNovaGrupo</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">juego</a>.<a class="code" href="class_idle_manager.html#ac12776e8d7488e54e9bc5c2dd6d7a618">ventanaPrincipalGrupo</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="ttc" id="aclass_idle_manager_html"><div class="ttname"><a href="class_idle_manager.html">IdleManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00008">IdleManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a58de809df296a9deae4723214364a79a"><div class="ttname"><a href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">IdleManager.data</a></div><div class="ttdeci">PlayerData data</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00010">IdleManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_ac12776e8d7488e54e9bc5c2dd6d7a618"><div class="ttname"><a href="class_idle_manager.html#ac12776e8d7488e54e9bc5c2dd6d7a618">IdleManager.ventanaPrincipalGrupo</a></div><div class="ttdeci">Canvas ventanaPrincipalGrupo</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00029">IdleManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_ad488140b01a352ee852747bbfd8140da"><div class="ttname"><a href="class_idle_manager.html#ad488140b01a352ee852747bbfd8140da">IdleManager.ventanaSuperNovaGrupo</a></div><div class="ttdeci">Canvas ventanaSuperNovaGrupo</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00033">IdleManager.cs:33</a></div></div>
+<div class="ttc" id="aclass_player_data_html_a1f3b04a178d30fff809a907b225b8f6a"><div class="ttname"><a href="class_player_data.html#a1f3b04a178d30fff809a907b225b8f6a">PlayerData.bitcoins</a></div><div class="ttdeci">BigDouble bitcoins</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00045">PlayerData.cs:45</a></div></div>
+<div class="ttc" id="aclass_player_data_html_ab9461916781b48a8c2fe3bedf2b5f513"><div class="ttname"><a href="class_player_data.html#ab9461916781b48a8c2fe3bedf2b5f513">PlayerData.astros</a></div><div class="ttdeci">BigDouble astros</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00070">PlayerData.cs:70</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html"><div class="ttname"><a href="class_super_nova_manager.html">SuperNovaManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00009">SuperNovaManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_a02ceef99fec7de68163183c590c07fa6"><div class="ttname"><a href="class_super_nova_manager.html#a02ceef99fec7de68163183c590c07fa6">SuperNovaManager.textoAstrosObtener</a></div><div class="ttdeci">Text textoAstrosObtener</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00015">SuperNovaManager.cs:15</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_a1884245b6bc0ab1d5ea50cd311a7d7cb"><div class="ttname"><a href="class_super_nova_manager.html#a1884245b6bc0ab1d5ea50cd311a7d7cb">SuperNovaManager.Run</a></div><div class="ttdeci">void Run()</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00020">SuperNovaManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_a6d0afb59c20db9d28d2d89c7b810e830"><div class="ttname"><a href="class_super_nova_manager.html#a6d0afb59c20db9d28d2d89c7b810e830">SuperNovaManager.juego</a></div><div class="ttdeci">IdleManager juego</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00011">SuperNovaManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_a88e9cdde035dfe4f3e75a40b55ca3871"><div class="ttname"><a href="class_super_nova_manager.html#a88e9cdde035dfe4f3e75a40b55ca3871">SuperNovaManager.textoAstrosMejora</a></div><div class="ttdeci">Text textoAstrosMejora</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00014">SuperNovaManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_ac7c305228852fad6095f832a95ced4f2"><div class="ttname"><a href="class_super_nova_manager.html#ac7c305228852fad6095f832a95ced4f2">SuperNovaManager.astrosMejora</a></div><div class="ttdeci">BigDouble astrosMejora</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00018">SuperNovaManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_ad0debd0027985e733a061297230048f8"><div class="ttname"><a href="class_super_nova_manager.html#ad0debd0027985e733a061297230048f8">SuperNovaManager.textoAstros</a></div><div class="ttdeci">Text textoAstros</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00013">SuperNovaManager.cs:13</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_ad35b854c99b2c8768ce3a2a9149560e4"><div class="ttname"><a href="class_super_nova_manager.html#ad35b854c99b2c8768ce3a2a9149560e4">SuperNovaManager.astrosObtener</a></div><div class="ttdeci">BigDouble astrosObtener</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00017">SuperNovaManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_super_nova_manager_html_af22ec9957f3f65de595875de4415f382"><div class="ttname"><a href="class_super_nova_manager.html#af22ec9957f3f65de595875de4415f382">SuperNovaManager.SuperNova</a></div><div class="ttdeci">void SuperNova()</div><div class="ttdef"><b>Definition:</b> <a href="_super_nova_manager_8cs_source.html#l00037">SuperNovaManager.cs:37</a></div></div>
+<div class="ttc" id="anamespace_break_infinity_html"><div class="ttname"><a href="namespace_break_infinity.html">BreakInfinity</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00013">BigDouble.cs:14</a></div></div>
+<div class="ttc" id="astruct_break_infinity_1_1_big_double_html"><div class="ttname"><a href="struct_break_infinity_1_1_big_double.html">BreakInfinity.BigDouble</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00018">BigDouble.cs:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<map id="BreakInfinity.BigDouble.PowersOf10" name="BreakInfinity.BigDouble.PowersOf10">
+<area shape="rect" id="node1" title="We need this lookup table because Math.pow(10, exponent) when exponent&#39;s absolute value is large is s..." alt="" coords="5,5,165,127"/>
+</map>

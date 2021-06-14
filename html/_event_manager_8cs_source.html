@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IdleImpact: Fichero Fuente D:/Unity/Proyectos/IdleProject/Assets/Scripts/EventManager.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Earth.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IdleImpact
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Clicker Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_215ba872d76dab12126bbfaeaa6b61fd.html">Unity</a></li><li class="navelem"><a class="el" href="dir_4dc258585e8a3be46effb20ffa0efd43.html">Proyectos</a></li><li class="navelem"><a class="el" href="dir_0354d2b78ec0787e421258cb6b840ba4.html">IdleProject</a></li><li class="navelem"><a class="el" href="dir_44cc158abfa91bb3183c6dce47e6db27.html">Assets</a></li><li class="navelem"><a class="el" href="dir_6de31145cbb2fd3e3a729e4a0bc01a8f.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EventManager.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_event_manager_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <span class="keyword">static</span> <a class="code" href="namespace_break_infinity.html">BreakInfinity</a>.<a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_event_manager.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_event_manager.html">EventManager</a> : MonoBehaviour</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">   11</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_idle_manager.html">IdleManager</a> <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_event_manager.html#a38f6ade547a01027e6444b1cafa488d5">   12</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_event_manager.html#a38f6ade547a01027e6444b1cafa488d5">TextoTokensEvento</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_event_manager.html#a9d6405cb4ce7e21dc7df4109ea395a1b">   14</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a> <a class="code" href="class_event_manager.html#a9d6405cb4ce7e21dc7df4109ea395a1b">tokensEventoMejora</a> =&gt; (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#a705e2f173597061761e2997b656b981b">tokensEvento</a> / 100) + 1;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_event_manager.html#ac7fab02fe1fecd954cf60c5c77ddf829">   16</a></span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="class_event_manager.html#ac7fab02fe1fecd954cf60c5c77ddf829">recompensaEventoPopUp</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_event_manager.html#acb09cc4f8b858331983894872e542fc3">   17</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_event_manager.html#acb09cc4f8b858331983894872e542fc3">textoEventoRecompensa</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_event_manager.html#a86ff82e8c76c67450d9772fdd6b54953">   18</a></span>&#160;    <span class="keyword">public</span> Text <a class="code" href="class_event_manager.html#a86ff82e8c76c67450d9772fdd6b54953">textoPingusSegundo</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_event_manager.html#a4a68b8b9ff031dee221a3f5faeeb8431">   20</a></span>&#160;    <span class="keyword">public</span> GameObject[] <a class="code" href="class_event_manager.html#a4a68b8b9ff031dee221a3f5faeeb8431">eventos</a> = <span class="keyword">new</span> GameObject[7];</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_event_manager.html#a1cf1d2e8ad9f5dd9fa6c25014210ce28">   21</a></span>&#160;    <span class="keyword">public</span> GameObject[] <a class="code" href="class_event_manager.html#a1cf1d2e8ad9f5dd9fa6c25014210ce28">eventosDesbloqueados</a> = <span class="keyword">new</span> GameObject[7];</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_event_manager.html#a399acdba9c34c8a6772a7e22e904a501">   22</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#a399acdba9c34c8a6772a7e22e904a501">textoRecompensa</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_event_manager.html#a9e69fd8360a10b849b91c12419d4250b">   23</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#a9e69fd8360a10b849b91c12419d4250b">textoPingus</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_event_manager.html#ac20febeeb80930fb161aa5bd0fee21f0">   24</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#ac20febeeb80930fb161aa5bd0fee21f0">textoClick</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_event_manager.html#a3f38fba2fad8ae2ff3ff76d7e1ea1a57">   25</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#a3f38fba2fad8ae2ff3ff76d7e1ea1a57">textoCoste</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_event_manager.html#a336fab32883abbef5ca564dbaace7e29">   26</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#a336fab32883abbef5ca564dbaace7e29">textoMejora</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_event_manager.html#a6d873a81c123907b4b5c120f38bbcbf2">   27</a></span>&#160;    <span class="keyword">public</span> Text[] <a class="code" href="class_event_manager.html#a6d873a81c123907b4b5c120f38bbcbf2">textoEmpezar</a> = <span class="keyword">new</span> Text[7];</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">   29</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">recompensa</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[7];</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">   30</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[7];</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">   32</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[] <a class="code" href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">costes</a> = <span class="keyword">new</span> <a class="code" href="struct_break_infinity_1_1_big_double.html">BigDouble</a>[7];</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">   33</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span>[] <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[7];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        DateTime tiempo = DateTime.Now;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">//Para hacer debug</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//var tiempodebug = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 1);</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> tiempo.DayOfWeek.ToString();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">   45</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">diaAnteriorComprobar</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_event_manager.html#ab82999e295afa4dc809a83d4a90e4f50">   47</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#ab82999e295afa4dc809a83d4a90e4f50">StartEventos</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">diaAnteriorComprobar</a> = <a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#a49cb24e15c77c143206d69dfd982ca42">eventoActivoID</a> != 0)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#a49cb24e15c77c143206d69dfd982ca42">eventoActivoID</a> = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a> = <span class="keyword">new</span> <span class="keywordtype">float</span>[7];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_event_manager.html#a78838eb337e993284fa0e392db468919">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#a78838eb337e993284fa0e392db468919">Update</a>()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        var data = <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="class_event_manager.html#a38f6ade547a01027e6444b1cafa488d5">TextoTokensEvento</a>.text =</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            $<span class="stringliteral">&quot;Tokens Evento: {Metodos.MetodoNotacion(data.tokensEvento, &quot;</span>F2<span class="stringliteral">&quot;)} ({Metodos.MetodoNotacion(tokensEventoMejora, &quot;</span>F2<span class="stringliteral">&quot;)}x)&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">recompensa</a>[0] = Log10(<a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[0] + 1);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">recompensa</a>[1] = Log10(<a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[1] / 5 + 1);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">costes</a>[i] = 10 * Pow(1.15, <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[i]);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">diaAnteriorComprobar</a> != <a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>())</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            data.eventoActivoID = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">//2 Son los dias que tenemos (Lunes y Martes)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 7; i++)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                data.eventCooldown[i] = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>())</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Monday&quot;</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(0);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(0);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Tuesday&quot;</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(0);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(0);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Wednesday&quot;</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(0);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(0);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Thursday&quot;</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(0);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(0);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Friday&quot;</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(0);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Saturday&quot;</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(1);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(1);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Sunday&quot;</span>:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">ventanaEventosGrupo</a>.gameObject.activeSelf)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(1);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(1);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (data.eventoActivoID == 0 &amp; <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a>[<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()] &gt; 0)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a>[<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()] -= Time.deltaTime;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data.eventoActivoID != 0 &amp; <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a>[<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()] &gt; 0)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a>[<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()] -= Time.deltaTime;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data.eventoActivoID != 0 &amp; <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>.<a class="code" href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">eventCooldown</a>[<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()] &lt;= 0)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="code" href="class_event_manager.html#af202bf5b23d1bb26f81a2c1a2bbbf466">EventoCompletado</a>(<a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">diaAnteriorComprobar</a> = <a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">  165</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">DiaDeHoy</a>()</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">DiaDelaSemana</a>())</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Monday&quot;</span>: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Tuesday&quot;</span>: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Wednesday&quot;</span>: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Thursday&quot;</span>: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Friday&quot;</span>: <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Saturday&quot;</span>: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Sunday&quot;</span>: <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_event_manager.html#aee9846cf949151318509b45ba0e9b7f8">  181</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#aee9846cf949151318509b45ba0e9b7f8">Click</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">switch</span> (<span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id] += 1 + <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[id] * <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#af5debe47d5cd5c2df28adac3fa293a12">MejoraTotal</a>();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id] += 1 * <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#af5debe47d5cd5c2df28adac3fa293a12">MejoraTotal</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_event_manager.html#ac26bb0c17c31c7a116e16f4aa8f10971">  195</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#ac26bb0c17c31c7a116e16f4aa8f10971">Comprar</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[<span class="keywordtype">id</span>] &lt; <a class="code" href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">costes</a>[<span class="keywordtype">id</span>]) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id] -= <a class="code" href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">costes</a>[id];</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[id]++;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_event_manager.html#a34ed6396a878b56b1ab84eccee618a24">  204</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#a34ed6396a878b56b1ab84eccee618a24">ActivarEvento</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        var id2 = <span class="keywordtype">id</span> - 1;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        var data = <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        var ahora = DateTime.Now;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="comment">//Empezar</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span> (data.eventoActivoID == 0 &amp; data.eventCooldown[id2] &lt;= 0 &amp; !(ahora.Hour == 23 &amp; ahora.Minute &gt;= 55))</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            data.<a class="code" href="class_player_data.html#a49cb24e15c77c143206d69dfd982ca42">eventoActivoID</a> = id;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            data.eventCooldown[id2] = 300;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id2] = 0;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[id2] = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ahora.Hour == 23 &amp; ahora.Minute &gt;= 55 &amp; data.eventoActivoID == 0) ;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data.eventCooldown[id2] &gt; 0 &amp; data.eventoActivoID == 0) ;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="class_event_manager.html#af202bf5b23d1bb26f81a2c1a2bbbf466">EventoCompletado</a>(id2);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="class_event_manager.html#af202bf5b23d1bb26f81a2c1a2bbbf466">  230</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#af202bf5b23d1bb26f81a2c1a2bbbf466">EventoCompletado</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        var data = <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        data.<a class="code" href="class_player_data.html#a705e2f173597061761e2997b656b981b">tokensEvento</a> += <a class="code" href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">recompensa</a>[id];</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="class_event_manager.html#acb09cc4f8b858331983894872e542fc3">textoEventoRecompensa</a>.text = $<span class="stringliteral">&quot;+{Metodos.MetodoNotacion(recompensa[id], &quot;</span>F2<span class="stringliteral">&quot;)} Tokens Evento&quot;</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id] = 0;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[id] = 0;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">//data.tokensEvento += recompensa[id];</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        data.eventoActivoID = 0;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        data.eventCooldown[id] = 7200;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="class_event_manager.html#ac7fab02fe1fecd954cf60c5c77ddf829">recompensaEventoPopUp</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="class_event_manager.html#ad20bb1a5e35976f17bbfa5270bef0fc4">  246</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#ad20bb1a5e35976f17bbfa5270bef0fc4">CerrarRecompensaEvento</a>()</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="code" href="class_event_manager.html#ac7fab02fe1fecd954cf60c5c77ddf829">recompensaEventoPopUp</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">  251</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">IniciarEventoUI</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        var data = <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">data</a>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">for</span> (var i = 0; i &lt; 2; i++)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">if</span> (i == <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <a class="code" href="class_event_manager.html#a4a68b8b9ff031dee221a3f5faeeb8431">eventos</a>[id].gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <a class="code" href="class_event_manager.html#a4a68b8b9ff031dee221a3f5faeeb8431">eventos</a>[i].gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        var tiempo = TimeSpan.FromSeconds(data.eventCooldown[<span class="keywordtype">id</span>]);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (data.eventoActivoID == 0)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <a class="code" href="class_event_manager.html#a6d873a81c123907b4b5c120f38bbcbf2">textoEmpezar</a>[id].text = data.eventCooldown[id] &gt; 0</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                ? tiempo.ToString(<span class="stringliteral">@&quot;hh\:mm\:ss&quot;</span>)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                : <span class="stringliteral">&quot;Empezar Evento&quot;</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <a class="code" href="class_event_manager.html#a6d873a81c123907b4b5c120f38bbcbf2">textoEmpezar</a>[id].text = $<span class="stringliteral">&quot;Salir del Evento: {(tiempo.ToString(@&quot;</span>hh\:mm\:ss<span class="stringliteral">&quot;))}&quot;</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span> (data.eventoActivoID != <span class="keywordtype">id</span> + 1) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <a class="code" href="class_event_manager.html#a1cf1d2e8ad9f5dd9fa6c25014210ce28">eventosDesbloqueados</a>[id].gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <a class="code" href="class_event_manager.html#a399acdba9c34c8a6772a7e22e904a501">textoRecompensa</a>[id].text = $<span class="stringliteral">&quot;+{Metodos.MetodoNotacion(recompensa[id], &quot;</span>F2<span class="stringliteral">&quot;)} Tokens Evento&quot;</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="class_event_manager.html#a9e69fd8360a10b849b91c12419d4250b">textoPingus</a>[id].text = $<span class="stringliteral">&quot;{Metodos.MetodoNotacion(pingus[id], &quot;</span>F2<span class="stringliteral">&quot;)} Pingus&quot;</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <a class="code" href="class_event_manager.html#a3f38fba2fad8ae2ff3ff76d7e1ea1a57">textoCoste</a>[id].text = $<span class="stringliteral">&quot;Coste: {Metodos.MetodoNotacion(costes[id], &quot;</span>F2<span class="stringliteral">&quot;)} ({niveles[id]})&quot;</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <a class="code" href="class_event_manager.html#ac20febeeb80930fb161aa5bd0fee21f0">textoClick</a>[id].text =</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    $<span class="stringliteral">&quot;Crear {Metodos.MetodoNotacion(niveles[id] + 1 * juego.MejoraTotal(), &quot;</span>F2<span class="stringliteral">&quot;)}\nPingus&quot;</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <a class="code" href="class_event_manager.html#a336fab32883abbef5ca564dbaace7e29">textoMejora</a>[id].text =</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    $<span class="stringliteral">&quot;Mejora Click 1\nGanar +{Metodos.MetodoNotacion(1 * juego.MejoraTotal(), &quot;</span>F2<span class="stringliteral">&quot;)} Pingus&quot;</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 1)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <a class="code" href="class_event_manager.html#a336fab32883abbef5ca564dbaace7e29">textoMejora</a>[id].text =</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                    $<span class="stringliteral">&quot;Mejora Producción 1\nGanar +{Metodos.MetodoNotacion(1 * juego.MejoraTotal(), &quot;</span>F2<span class="stringliteral">&quot;)} Pingu/s&quot;</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                <a class="code" href="class_event_manager.html#ac20febeeb80930fb161aa5bd0fee21f0">textoClick</a>[id].text = $<span class="stringliteral">&quot;Crear {Metodos.MetodoNotacion(1 * juego.MejoraTotal(), &quot;</span>F2<span class="stringliteral">&quot;)}\nPingus&quot;</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <a class="code" href="class_event_manager.html#a86ff82e8c76c67450d9772fdd6b54953">textoPingusSegundo</a>.text =</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    $<span class="stringliteral">&quot;Pingus/s {Metodos.MetodoNotacion(niveles[id] * juego.MejoraTotal(), &quot;</span>F2<span class="stringliteral">&quot;)}&quot;</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">  306</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EmpezarEvento</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">switch</span> (<span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <a class="code" href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">pingus</a>[id] += <a class="code" href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">niveles</a>[id] * Time.deltaTime * <a class="code" href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">juego</a>.<a class="code" href="class_idle_manager.html#af5debe47d5cd5c2df28adac3fa293a12">MejoraTotal</a>();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="ttc" id="aclass_event_manager_html"><div class="ttname"><a href="class_event_manager.html">EventManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00009">EventManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a0d4e3efbc4805e4b5961f5b798f834e0"><div class="ttname"><a href="class_event_manager.html#a0d4e3efbc4805e4b5961f5b798f834e0">EventManager.IniciarEventoUI</a></div><div class="ttdeci">void IniciarEventoUI(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00251">EventManager.cs:251</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a1cf1d2e8ad9f5dd9fa6c25014210ce28"><div class="ttname"><a href="class_event_manager.html#a1cf1d2e8ad9f5dd9fa6c25014210ce28">EventManager.eventosDesbloqueados</a></div><div class="ttdeci">GameObject[] eventosDesbloqueados</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00021">EventManager.cs:21</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a336fab32883abbef5ca564dbaace7e29"><div class="ttname"><a href="class_event_manager.html#a336fab32883abbef5ca564dbaace7e29">EventManager.textoMejora</a></div><div class="ttdeci">Text[] textoMejora</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00026">EventManager.cs:26</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a3490f4b3ab0768cec511826479173821"><div class="ttname"><a href="class_event_manager.html#a3490f4b3ab0768cec511826479173821">EventManager.juego</a></div><div class="ttdeci">IdleManager juego</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00011">EventManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a34ed6396a878b56b1ab84eccee618a24"><div class="ttname"><a href="class_event_manager.html#a34ed6396a878b56b1ab84eccee618a24">EventManager.ActivarEvento</a></div><div class="ttdeci">void ActivarEvento(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00204">EventManager.cs:204</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a38f6ade547a01027e6444b1cafa488d5"><div class="ttname"><a href="class_event_manager.html#a38f6ade547a01027e6444b1cafa488d5">EventManager.TextoTokensEvento</a></div><div class="ttdeci">Text TextoTokensEvento</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00012">EventManager.cs:12</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a399acdba9c34c8a6772a7e22e904a501"><div class="ttname"><a href="class_event_manager.html#a399acdba9c34c8a6772a7e22e904a501">EventManager.textoRecompensa</a></div><div class="ttdeci">Text[] textoRecompensa</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00022">EventManager.cs:22</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a3c90db70f844d2e3e4623e7f4cbc9475"><div class="ttname"><a href="class_event_manager.html#a3c90db70f844d2e3e4623e7f4cbc9475">EventManager.diaAnteriorComprobar</a></div><div class="ttdeci">string diaAnteriorComprobar</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00045">EventManager.cs:45</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a3f38fba2fad8ae2ff3ff76d7e1ea1a57"><div class="ttname"><a href="class_event_manager.html#a3f38fba2fad8ae2ff3ff76d7e1ea1a57">EventManager.textoCoste</a></div><div class="ttdeci">Text[] textoCoste</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00025">EventManager.cs:25</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a4a68b8b9ff031dee221a3f5faeeb8431"><div class="ttname"><a href="class_event_manager.html#a4a68b8b9ff031dee221a3f5faeeb8431">EventManager.eventos</a></div><div class="ttdeci">GameObject[] eventos</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00020">EventManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a6d873a81c123907b4b5c120f38bbcbf2"><div class="ttname"><a href="class_event_manager.html#a6d873a81c123907b4b5c120f38bbcbf2">EventManager.textoEmpezar</a></div><div class="ttdeci">Text[] textoEmpezar</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00027">EventManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a6f133adc2a534af80ff93adf6c4d637d"><div class="ttname"><a href="class_event_manager.html#a6f133adc2a534af80ff93adf6c4d637d">EventManager.DiaDeHoy</a></div><div class="ttdeci">int DiaDeHoy()</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00165">EventManager.cs:165</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a78838eb337e993284fa0e392db468919"><div class="ttname"><a href="class_event_manager.html#a78838eb337e993284fa0e392db468919">EventManager.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00058">EventManager.cs:58</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a799f0b82d5cab252b8dfe6a0b451f2c5"><div class="ttname"><a href="class_event_manager.html#a799f0b82d5cab252b8dfe6a0b451f2c5">EventManager.EmpezarEvento</a></div><div class="ttdeci">void EmpezarEvento(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00306">EventManager.cs:306</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a7b33f0053e61dabf22f9b22dbe7d3fb0"><div class="ttname"><a href="class_event_manager.html#a7b33f0053e61dabf22f9b22dbe7d3fb0">EventManager.costes</a></div><div class="ttdeci">BigDouble[] costes</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00032">EventManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a86ff82e8c76c67450d9772fdd6b54953"><div class="ttname"><a href="class_event_manager.html#a86ff82e8c76c67450d9772fdd6b54953">EventManager.textoPingusSegundo</a></div><div class="ttdeci">Text textoPingusSegundo</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00018">EventManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a8b36d95cb716aa7b5e5a2c5a06bd123b"><div class="ttname"><a href="class_event_manager.html#a8b36d95cb716aa7b5e5a2c5a06bd123b">EventManager.pingus</a></div><div class="ttdeci">BigDouble[] pingus</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00030">EventManager.cs:30</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a8e6e031cee1a34ad9e971696b99c7af3"><div class="ttname"><a href="class_event_manager.html#a8e6e031cee1a34ad9e971696b99c7af3">EventManager.DiaDelaSemana</a></div><div class="ttdeci">string DiaDelaSemana()</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00035">EventManager.cs:35</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a9d6405cb4ce7e21dc7df4109ea395a1b"><div class="ttname"><a href="class_event_manager.html#a9d6405cb4ce7e21dc7df4109ea395a1b">EventManager.tokensEventoMejora</a></div><div class="ttdeci">BigDouble tokensEventoMejora</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00014">EventManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_a9e69fd8360a10b849b91c12419d4250b"><div class="ttname"><a href="class_event_manager.html#a9e69fd8360a10b849b91c12419d4250b">EventManager.textoPingus</a></div><div class="ttdeci">Text[] textoPingus</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00023">EventManager.cs:23</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_aaa47d0d3d79d0475e7771a4a68363a00"><div class="ttname"><a href="class_event_manager.html#aaa47d0d3d79d0475e7771a4a68363a00">EventManager.recompensa</a></div><div class="ttdeci">BigDouble[] recompensa</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00029">EventManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ab82999e295afa4dc809a83d4a90e4f50"><div class="ttname"><a href="class_event_manager.html#ab82999e295afa4dc809a83d4a90e4f50">EventManager.StartEventos</a></div><div class="ttdeci">void StartEventos()</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00047">EventManager.cs:47</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ac20febeeb80930fb161aa5bd0fee21f0"><div class="ttname"><a href="class_event_manager.html#ac20febeeb80930fb161aa5bd0fee21f0">EventManager.textoClick</a></div><div class="ttdeci">Text[] textoClick</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00024">EventManager.cs:24</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ac26bb0c17c31c7a116e16f4aa8f10971"><div class="ttname"><a href="class_event_manager.html#ac26bb0c17c31c7a116e16f4aa8f10971">EventManager.Comprar</a></div><div class="ttdeci">void Comprar(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00195">EventManager.cs:195</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ac7fab02fe1fecd954cf60c5c77ddf829"><div class="ttname"><a href="class_event_manager.html#ac7fab02fe1fecd954cf60c5c77ddf829">EventManager.recompensaEventoPopUp</a></div><div class="ttdeci">GameObject recompensaEventoPopUp</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00016">EventManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_acb09cc4f8b858331983894872e542fc3"><div class="ttname"><a href="class_event_manager.html#acb09cc4f8b858331983894872e542fc3">EventManager.textoEventoRecompensa</a></div><div class="ttdeci">Text textoEventoRecompensa</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00017">EventManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ad20bb1a5e35976f17bbfa5270bef0fc4"><div class="ttname"><a href="class_event_manager.html#ad20bb1a5e35976f17bbfa5270bef0fc4">EventManager.CerrarRecompensaEvento</a></div><div class="ttdeci">void CerrarRecompensaEvento()</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00246">EventManager.cs:246</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_ad2c635377504bcdaf40ed56a88c2a04c"><div class="ttname"><a href="class_event_manager.html#ad2c635377504bcdaf40ed56a88c2a04c">EventManager.niveles</a></div><div class="ttdeci">int[] niveles</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00033">EventManager.cs:33</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_aee9846cf949151318509b45ba0e9b7f8"><div class="ttname"><a href="class_event_manager.html#aee9846cf949151318509b45ba0e9b7f8">EventManager.Click</a></div><div class="ttdeci">void Click(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00181">EventManager.cs:181</a></div></div>
+<div class="ttc" id="aclass_event_manager_html_af202bf5b23d1bb26f81a2c1a2bbbf466"><div class="ttname"><a href="class_event_manager.html#af202bf5b23d1bb26f81a2c1a2bbbf466">EventManager.EventoCompletado</a></div><div class="ttdeci">void EventoCompletado(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_event_manager_8cs_source.html#l00230">EventManager.cs:230</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html"><div class="ttname"><a href="class_idle_manager.html">IdleManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00008">IdleManager.cs:9</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a12c8463f3a1545b3862a1c98d300527e"><div class="ttname"><a href="class_idle_manager.html#a12c8463f3a1545b3862a1c98d300527e">IdleManager.ventanaEventosGrupo</a></div><div class="ttdeci">Canvas ventanaEventosGrupo</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00032">IdleManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_a58de809df296a9deae4723214364a79a"><div class="ttname"><a href="class_idle_manager.html#a58de809df296a9deae4723214364a79a">IdleManager.data</a></div><div class="ttdeci">PlayerData data</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00010">IdleManager.cs:10</a></div></div>
+<div class="ttc" id="aclass_idle_manager_html_af5debe47d5cd5c2df28adac3fa293a12"><div class="ttname"><a href="class_idle_manager.html#af5debe47d5cd5c2df28adac3fa293a12">IdleManager.MejoraTotal</a></div><div class="ttdeci">BigDouble MejoraTotal()</div><div class="ttdef"><b>Definition:</b> <a href="_idle_manager_8cs_source.html#l00138">IdleManager.cs:138</a></div></div>
+<div class="ttc" id="aclass_player_data_html_a49cb24e15c77c143206d69dfd982ca42"><div class="ttname"><a href="class_player_data.html#a49cb24e15c77c143206d69dfd982ca42">PlayerData.eventoActivoID</a></div><div class="ttdeci">int eventoActivoID</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00109">PlayerData.cs:109</a></div></div>
+<div class="ttc" id="aclass_player_data_html_a705e2f173597061761e2997b656b981b"><div class="ttname"><a href="class_player_data.html#a705e2f173597061761e2997b656b981b">PlayerData.tokensEvento</a></div><div class="ttdeci">BigDouble tokensEvento</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00107">PlayerData.cs:107</a></div></div>
+<div class="ttc" id="aclass_player_data_html_ab92852b076a80121ce28f5bb0f8661d1"><div class="ttname"><a href="class_player_data.html#ab92852b076a80121ce28f5bb0f8661d1">PlayerData.eventCooldown</a></div><div class="ttdeci">float[] eventCooldown</div><div class="ttdef"><b>Definition:</b> <a href="_player_data_8cs_source.html#l00108">PlayerData.cs:108</a></div></div>
+<div class="ttc" id="anamespace_break_infinity_html"><div class="ttname"><a href="namespace_break_infinity.html">BreakInfinity</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00013">BigDouble.cs:14</a></div></div>
+<div class="ttc" id="astruct_break_infinity_1_1_big_double_html"><div class="ttname"><a href="struct_break_infinity_1_1_big_double.html">BreakInfinity.BigDouble</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00018">BigDouble.cs:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

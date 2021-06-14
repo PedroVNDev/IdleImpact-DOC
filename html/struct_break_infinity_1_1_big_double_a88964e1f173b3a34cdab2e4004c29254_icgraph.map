@@ -1,0 +1,52 @@
+<map id="BreakInfinity.BigDouble.BigDouble" name="BreakInfinity.BigDouble.BigDouble">
+<area shape="rect" id="node1" title=" " alt="" coords="1400,567,1560,609"/>
+<area shape="rect" id="node2" href="$struct_break_infinity_1_1_big_double.html#aaa834a75b61d388f8411e831f0217537" title=" " alt="" coords="1157,97,1340,124"/>
+<area shape="rect" id="node7" href="$struct_break_infinity_1_1_big_double.html#a70e3fd2f62f096df006c8b8f82b8f55f" title=" " alt="" coords="1169,187,1329,229"/>
+<area shape="rect" id="node9" href="$struct_break_infinity_1_1_big_double.html#a804b76df766732d02be1f47c5069b84b" title=" " alt="" coords="1169,429,1329,470"/>
+<area shape="rect" id="node13" href="$struct_break_infinity_1_1_big_double.html#abbd48b7a847e39976d5a0e0e06c98422" title=" " alt="" coords="893,509,1053,550"/>
+<area shape="rect" id="node24" href="$struct_break_infinity_1_1_big_double.html#a09e63f9781fde38ad7deb510f1c49f6b" title=" " alt="" coords="609,811,769,853"/>
+<area shape="rect" id="node34" href="$struct_break_infinity_1_1_big_double.html#abfb76da3f076ff9698809182e6b3d205" title=" " alt="" coords="597,241,781,268"/>
+<area shape="rect" id="node42" href="$struct_break_infinity_1_1_big_double.html#ac5084a38e596c6baa924c033ffce8bba" title=" " alt="" coords="1169,691,1329,733"/>
+<area shape="rect" id="node45" href="$struct_break_infinity_1_1_big_double.html#abb12b7d4d8f029a71efb69a7a3a7ca46" title=" " alt="" coords="1145,757,1352,798"/>
+<area shape="rect" id="node46" href="$struct_break_infinity_1_1_big_double.html#acf5bf90960484ca6b26009b60ad69cda" title=" " alt="" coords="1169,822,1329,863"/>
+<area shape="rect" id="node47" href="$struct_break_infinity_1_1_big_double.html#aaa092ddf57efcdab8b9c05149b2cfdfa" title=" " alt="" coords="1169,626,1329,667"/>
+<area shape="rect" id="node49" href="$struct_break_infinity_1_1_big_double.html#a30a6fdafdddb55cd5f414a0fcd98a97b" title=" " alt="" coords="1169,887,1329,929"/>
+<area shape="rect" id="node3" href="$class_break_infinity_1_1_big_double_extensions.html#a42dc4d6a2fa98ae94463071423ef4128" title=" " alt="" coords="849,5,1097,32"/>
+<area shape="rect" id="node4" href="$struct_break_infinity_1_1_big_double.html#ab5cdd72f09c172695268bca23469e9f2" title=" " alt="" coords="893,57,1053,98"/>
+<area shape="rect" id="node6" href="$struct_break_infinity_1_1_big_double.html#ae40fe4e526536cc18b4c96cc075b719d" title="Relative comparison with tolerance being adjusted with greatest exponent." alt="" coords="893,122,1053,163"/>
+<area shape="rect" id="node5" href="$class_break_infinity_1_1_big_double_extensions.html#aa05d0e93618aa9f80f14994722af2a90" title=" " alt="" coords="576,57,801,98"/>
+<area shape="rect" id="node8" href="$class_break_infinity_1_1_big_double_extensions.html#a503f32c7fc0894e6325531eb3ebb9046" title=" " alt="" coords="861,187,1086,229"/>
+<area shape="rect" id="node10" href="$class_break_infinity_1_1_big_math.html#a6e806277319d25254faa96359ae66d7e" title="If you&#39;re willing to spend &#39;resourcesAvailable&#39; and want to buy something with additively increasing ..." alt="" coords="312,318,495,359"/>
+<area shape="rect" id="node11" href="$class_break_infinity_1_1_big_math.html#a9c3bfc462754e2135622dc03bfcd7d38" title="If you&#39;re willing to spend &#39;resourcesAvailable&#39; and want to buy something with exponentially increasi..." alt="" coords="882,370,1065,411"/>
+<area shape="rect" id="node12" href="$class_break_infinity_1_1_big_double_extensions.html#ab62243bd934ccb63dba68056cb974a7e" title=" " alt="" coords="861,305,1086,346"/>
+<area shape="rect" id="node14" href="$struct_break_infinity_1_1_big_double.html#a03c24be02e76eda94dff038b7bf1f825" title=" " alt="" coords="597,709,780,736"/>
+<area shape="rect" id="node18" href="$struct_break_infinity_1_1_big_double.html#ada66a8e18780c1d2148dc6ff4fdcea99" title=" " alt="" coords="609,343,769,385"/>
+<area shape="rect" id="node19" href="$struct_break_infinity_1_1_big_double.html#a8639f7103513821d3f1c53171e66075c" title=" " alt="" coords="597,760,781,787"/>
+<area shape="rect" id="node21" href="$struct_break_infinity_1_1_big_double.html#a119a15b23040456606b2d04c20ba19dc" title=" " alt="" coords="609,578,769,619"/>
+<area shape="rect" id="node25" href="$struct_break_infinity_1_1_big_double.html#a8fa692537bad593fd6c1be81650fc3a8" title=" " alt="" coords="311,468,496,495"/>
+<area shape="rect" id="node26" href="$struct_break_infinity_1_1_big_double.html#a76a102bbac71a37252b3b62c1c84c661" title=" " alt="" coords="609,461,769,502"/>
+<area shape="rect" id="node27" href="$struct_break_infinity_1_1_big_double.html#a14b7e22763e82023c9c06c25e5f9d6d9" title=" " alt="" coords="323,402,483,443"/>
+<area shape="rect" id="node29" href="$class_break_infinity_1_1_big_math.html#af1e28b4d8b77fb939fd593a2da4c3c7b" title="This doesn&#39;t follow any kind of sane random distribution, so use this for testing purposes only." alt="" coords="590,877,787,918"/>
+<area shape="rect" id="node30" href="$struct_break_infinity_1_1_big_double.html#a1db1712d2dad0a7c31bcf9456c2704db" title=" " alt="" coords="609,643,769,685"/>
+<area shape="rect" id="node15" href="$class_break_infinity_1_1_big_double_extensions.html#a4d47612a19bf69714280344b8bba946a" title=" " alt="" coords="279,868,527,895"/>
+<area shape="rect" id="node16" href="$struct_break_infinity_1_1_big_double.html#a8614c322080d5cbb4c51d280f71037e0" title=" " alt="" coords="296,767,511,793"/>
+<area shape="rect" id="node17" href="$struct_break_infinity_1_1_big_double.html#afb319d0154e5442f0612868d3c6a9652" title=" " alt="" coords="292,817,515,844"/>
+<area shape="rect" id="node20" href="$class_break_infinity_1_1_big_double_extensions.html#a692e78c68c86e3d7cc5f51b3541d6c41" title=" " alt="" coords="279,919,528,945"/>
+<area shape="rect" id="node22" href="$class_break_infinity_1_1_big_double_extensions.html#a1f3dd836ebc5bdb08bdd9206d7004000" title=" " alt="" coords="291,570,516,611"/>
+<area shape="rect" id="node23" href="$struct_break_infinity_1_1_big_double.html#adcc3b79bbb425ecef89c91715a424612" title=" " alt="" coords="297,519,509,545"/>
+<area shape="rect" id="node28" href="$struct_break_infinity_1_1_big_double.html#a50d11ab592263c9e9fd60434944c79f2" title=" " alt="" coords="25,409,211,436"/>
+<area shape="rect" id="node31" href="$struct_break_infinity_1_1_big_double.html#a70c48f47b66909f242ed565c11ef7e49" title=" " alt="" coords="323,701,483,742"/>
+<area shape="rect" id="node33" href="$class_break_infinity_1_1_big_double_extensions.html#aef757dad548db7441d92e194bf92dc15" title=" " alt="" coords="291,635,516,677"/>
+<area shape="rect" id="node32" href="$class_break_infinity_1_1_big_double_extensions.html#a39896195eb61ec493b1282b6893b9cab" title=" " alt="" coords="5,701,231,742"/>
+<area shape="rect" id="node35" href="$struct_break_infinity_1_1_big_double.html#a4cdf29ad3f46bc317d7bd5baf5cfe0e4" title=" " alt="" coords="323,122,483,163"/>
+<area shape="rect" id="node37" href="$struct_break_infinity_1_1_big_double.html#ab2ecca5aed80137a949c0292cccefcbd" title=" " alt="" coords="323,187,483,229"/>
+<area shape="rect" id="node39" href="$struct_break_infinity_1_1_big_double.html#a6196833ec4515d18e2f84e6e78df5a14" title=" " alt="" coords="323,253,483,294"/>
+<area shape="rect" id="node41" href="$class_break_infinity_1_1_big_double_extensions.html#ad1d93f18c9937250770756bb77f1779b" title=" " alt="" coords="279,71,528,97"/>
+<area shape="rect" id="node36" href="$class_break_infinity_1_1_big_double_extensions.html#a55b29af5214446c156914182411dee4b" title=" " alt="" coords="5,122,231,163"/>
+<area shape="rect" id="node38" href="$class_break_infinity_1_1_big_double_extensions.html#ad35b63445388920ffdc0c9bc7cea3a66" title=" " alt="" coords="5,187,231,229"/>
+<area shape="rect" id="node40" href="$class_break_infinity_1_1_big_double_extensions.html#a3b420e47f8a01ee36a98718b4464c6a0" title=" " alt="" coords="5,253,231,294"/>
+<area shape="rect" id="node43" href="$class_break_infinity_1_1_big_double_extensions.html#ac79ec6da2d55d9e2446e49cb45a44ba5" title=" " alt="" coords="861,794,1086,835"/>
+<area shape="rect" id="node44" href="$struct_break_infinity_1_1_big_double.html#ac7b44dd2f9df485b81c42ebdd1888de4" title=" " alt="" coords="868,743,1079,769"/>
+<area shape="rect" id="node48" href="$class_break_infinity_1_1_big_double_extensions.html#a07b4f98cbb660d342524e1511c5f5f1b" title=" " alt="" coords="861,626,1086,667"/>
+<area shape="rect" id="node50" href="$class_break_infinity_1_1_big_double_extensions.html#a38312c3acefb487daa632b4246f019d9" title=" " alt="" coords="861,887,1086,929"/>
+</map>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IdleImpact: Fichero Fuente D:/Unity/Proyectos/IdleProject/Assets/Scripts/BigDoubleEditor.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Earth.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IdleImpact
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Clicker Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_215ba872d76dab12126bbfaeaa6b61fd.html">Unity</a></li><li class="navelem"><a class="el" href="dir_4dc258585e8a3be46effb20ffa0efd43.html">Proyectos</a></li><li class="navelem"><a class="el" href="dir_0354d2b78ec0787e421258cb6b840ba4.html">IdleProject</a></li><li class="navelem"><a class="el" href="dir_44cc158abfa91bb3183c6dce47e6db27.html">Assets</a></li><li class="navelem"><a class="el" href="dir_6de31145cbb2fd3e3a729e4a0bc01a8f.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BigDoubleEditor.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_big_double_editor_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#if UNITY_EDITOR</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_break_infinity.html">BreakInfinity</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    [CustomPropertyDrawer(typeof(BigDouble))]</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>BigDoubleDrawer : PropertyDrawer</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnGUI(Rect position, SerializedProperty property, GUIContent label)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            EditorGUI.BeginProperty(position, label, property);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            var indent = EditorGUI.indentLevel;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            EditorGUI.indentLevel = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> gapWidth = 10;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            var mantissaRect = <span class="keyword">new</span> Rect(position.x, position.y, (position.width - gapWidth) * 0.66f, position.height);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            var gapRect = <span class="keyword">new</span> Rect(mantissaRect.x + mantissaRect.width, position.y, gapWidth, position.height);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            var exponentRect = <span class="keyword">new</span> Rect(gapRect.x + gapRect.width, position.y, (position.width - gapWidth) * 0.33f, position.height);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            var mantissaProperty = <span class="keyword">property</span>.FindPropertyRelative(<span class="stringliteral">&quot;mantissa&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            var exponentProperty = <span class="keyword">property</span>.FindPropertyRelative(<span class="stringliteral">&quot;exponent&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            EditorGUI.BeginChangeCheck();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            var mantissa = EditorGUI.DoubleField(mantissaRect, mantissaProperty.doubleValue, <span class="keyword">new</span> GUIStyle(EditorStyles.numberField)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                alignment = TextAnchor.MiddleRight</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            });</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            EditorGUI.LabelField(gapRect, <span class="stringliteral">&quot;e&quot;</span>, <span class="keyword">new</span> GUIStyle(GUIStyle.none)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                alignment = TextAnchor.MiddleCenter</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            });</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            var exponent = EditorGUI.LongField(exponentRect, exponentProperty.longValue);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">if</span> (EditorGUI.EndChangeCheck())</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                var normalized = BigDouble.Normalize(mantissa, exponent);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                mantissaProperty.doubleValue = normalized.Mantissa;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                exponentProperty.longValue = normalized.Exponent;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            EditorGUI.indentLevel = indent;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            EditorGUI.EndProperty();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespace_break_infinity_html"><div class="ttname"><a href="namespace_break_infinity.html">BreakInfinity</a></div><div class="ttdef"><b>Definition:</b> <a href="_big_double_8cs_source.html#l00013">BigDouble.cs:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
